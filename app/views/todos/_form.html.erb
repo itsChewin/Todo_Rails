@@ -5,8 +5,8 @@
   </div>
 
  <div class="mb-4">
-    <%= form.label :completed, class: "block font-bold" %>
-    <%= form.select :completed, [["Not Completed", "not_completed"], ["Completed", "completed"]], {}, class: "shadow rounded-md border border-gray-300 outline-none px-3 py-2 mt-2 w-full bg-transparent hover:border-orange-600 focus:border-orange-600 focus:ring-orange-600" %>
+    <%= form.label :complete, class: "block font-bold" %>
+    <%= form.select :complete, [["Not Completed", "not_completed"], ["Completed", "completed"]], {}, class: "shadow rounded-md border border-gray-300 outline-none px-3 py-2 mt-2 w-full bg-transparent hover:border-orange-600 focus:border-orange-600 focus:ring-orange-600" %>
   </div> 
 
   <% if todo.errors.any? %>
