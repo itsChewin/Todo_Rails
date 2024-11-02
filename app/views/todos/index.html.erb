@@ -16,6 +16,11 @@
 
 
 <section class="block max-w-md w-full mx-auto bg-zinc-200 py-8 px-4 border border-gray-200 rounded-md shadow-sm" >
+  <%= form_with method: :get, class: "flex items-center gap-2 mb-4" do |form| %>
+    <%= form.text_field "text", class: "flex-grow rounded-lg" %>
+    <%= form.submit "Search", class: "rounded-lg px-3 py-2 bg-orange-600 text-white hover:bg-orange-800" %>
+  <% end %>
+
   <div class="flex justify-between items-center">
     <h1 class="text-3xl font-bold text-orange-600" >Todos</h1>
 
